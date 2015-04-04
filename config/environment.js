@@ -6,6 +6,10 @@ module.exports = function(environment) {
     environment: environment,
     baseURL: '/',
     locationType: 'auto',
+    contentSecurityPolicy: {
+      'connect-src': "'self' gateway.marvel.com",
+    },
+    MARVEL_PUBLIC_KEY: process.env.MARVEL_PUBLIC_KEY,
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build

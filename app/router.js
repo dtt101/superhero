@@ -7,5 +7,9 @@ var Router = Ember.Router.extend({
 
 export default Router.map(function() {
     this.route('about');
-    this.resource('characters', function() {});
+    this.resource('characters', function() {
+      this.route('show', {
+        path: ':character_id'
+      });
+    });
 });

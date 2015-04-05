@@ -1,17 +1,12 @@
 <div class="clearfix black bg-orange">
   <div class="col col-4 p2">
     <h1 id="title">Superheroes</h1>
-    <input type="text" class="block half-width field-light" placeholder="Search...">
-    <ul>
+    <input type="text" class="block full-width field-light" placeholder="Search...">
     {{#each character in model}}
-      <li>
-        {{#link-to 'characters.show' character}}
+        {{#link-to 'characters.show' character classNames="button block button-transparent"}}
           {{character.name}}
         {{/link-to}}
-      </li>
     {{/each}}
-    </ul>
-
   </div>
   <div class="col col-8 p2">
     {{outlet}}

@@ -1,1 +1,6 @@
-{{outlet}}
+<h2>All characters</h2>
+<ul>
+{{#each character in model}}
+  <li>{{character.name}}</li>
+{{/each}}
+</ul>

@@ -1,6 +1,8 @@
-<ul>
-  <li>{{#link-to 'application'}}Home{{/link-to}}</li>
-  <li>{{#link-to 'characters'}}Characters{{/link-to}}</li>
-  <li>{{#link-to 'about'}}About{{/link-to}}</li>
-</ul>
+<div class="clearfix p2">
+  <div class="mxn1">
+    {{#link-to 'application' classNames='button button-narrow button-transparent'}}Home{{/link-to}}
+    {{#link-to 'characters' classNames='button button-narrow button-transparent'}}Characters{{/link-to}}
+    {{#link-to 'about' classNames='button button-narrow button-transparent'}}About{{/link-to}}
+  </div>
+</div>
 {{yield}}

@@ -10,9 +10,8 @@ export default Ember.Route.extend({
 
   model: function(params) {
     if (!params.query) {
-      return []; // no results;
+      return this.store.findAll('character');
     }
-    // return this.store.findAll('character');
-    return this.store.find('character', { nameStartsWith: params.query })
+    return this.store.find('character', { nameStartsWith: params.query });
   }
 });

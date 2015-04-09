@@ -1,0 +1,17 @@
+<div class="col col-4 p2">
+  <h1 id="title">Superheroes</h1>
+  <form {{action "search" on="submit"}}>
+     {{input value=queryField classNames="block full-width field-light"}}
+     <input type="submit" value="Search"/>
+   </form>
+   <!-- TODO: MOVE THIS TO DETAIL VIEW, and change to show details on page -->
+  {{#each character in model}}
+      {{#link-to 'characters.show' character (query-params query="null") classNames="button block button-transparent"}}
+        {{character.name}}
+      {{/link-to}}
+  {{/each}}
+  Total: {{meta.total}}
+</div>
+<div class="col col-8 p2">
+  <!-- TODO: DETAILS HERE WITH LINK TO FULL PROFILE using link-to -->
+</div>

@@ -1,18 +1,3 @@
 <div class="clearfix black bg-orange">
-  <div class="col col-4 p2">
-    <h1 id="title">Superheroes</h1>
-    <form {{action "search" on="submit"}}>
-       {{input value=queryField classNames="block full-width field-light"}}
-       <input type="submit" value="Search"/>
-     </form>
-    {{#each character in model}}
-        {{#link-to 'characters.show' character (query-params query="null") classNames="button block button-transparent"}}
-          {{character.name}}
-        {{/link-to}}
-    {{/each}}
-    Total: {{meta.total}}
-  </div>
-  <div class="col col-8 p2">
-    {{outlet}}
-  </div>
+  {{outlet}}
 </div>

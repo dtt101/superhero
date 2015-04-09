@@ -58,3 +58,11 @@ Specify what it takes to deploy your app.
 * Development Browser Extensions
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+
+
+## TODO
+
+ * Show cards on search results - click card to link to detail
+ * Build bigger detail page and API call for character info
+ * Show loader on API calls
+ * Add custom attribute to character for image information

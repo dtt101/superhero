@@ -1,7 +1,8 @@
 # Superhero
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This is an app which showcases communicating with a third party API using
+Ember. It uses the Marvel API to list or search the Marvel character database
+via their API.
 
 ## Prerequisites
 
@@ -32,10 +33,6 @@ MARVEL_PUBLIC_KEY=YOURKEYGOESHERE
 
 * `ember server`
 * Visit your app at [http://localhost:4200](http://localhost:4200).
-
-### Code Generators
-
-Make use of the many generators for code, try `ember help generate` for more details
 
 ### Running Tests
 

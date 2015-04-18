@@ -8,6 +8,7 @@ module.exports = function(environment) {
     locationType: 'auto',
     contentSecurityPolicy: {
       'connect-src': "'self' gateway.marvel.com",
+      'img-src': "'self' i.annihil.us"
     },
     MARVEL_PUBLIC_KEY: process.env.MARVEL_PUBLIC_KEY,
     EmberENV: {

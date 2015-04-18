@@ -7,7 +7,8 @@
    <!-- TODO: MOVE THIS TO DETAIL VIEW, and change to show details on page -->
   {{#each character in model}}
       {{#link-to 'characters.show' character (query-params query="null") classNames="button block button-transparent"}}
-        {{character.name}}
+      <img src="{{character.thumbnail}}" class="thumbnail"><br>
+      {{character.name}}
       {{/link-to}}
   {{/each}}
   Total: {{meta.total}}

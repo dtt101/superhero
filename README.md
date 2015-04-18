@@ -59,7 +59,6 @@ Specify what it takes to deploy your app.
 
 ## TODO
 
+ * Show loader on API calls
  * Show cards on search results - click card to link to detail
  * Build bigger detail page and API call for character info
- * Show loader on API calls
- * Add custom attribute to character for image information

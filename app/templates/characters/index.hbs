@@ -1,13 +1,16 @@
 <div class="col col-4 p2">
   <h1 id="title">Superheroes</h1>
   <form {{action "search" on="submit"}}>
-     {{input value=queryField classNames="block full-width field-light"}}
-     <input type="submit" value="Search"/>
-   </form>
+    <label>Search:</label>
+    {{input value=queryField classNames="field-light"}}
+    <input type="submit" value="Search" class="button" />
+  </form>
    <!-- TODO: MOVE THIS TO DETAIL VIEW, and change to show details on page -->
   {{#each character in model}}
       {{#link-to 'characters.show' character (query-params query="null") classNames="button block button-transparent"}}
-      <img src="{{character.thumbnail}}" class="thumbnail"><br>
+      {{#if character.thumbnail}}
+        <img src="{{character.thumbnail}}" class="thumbnail"><br>
+      {{/if}}
       {{character.name}}
       {{/link-to}}
   {{/each}}

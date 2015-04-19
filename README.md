@@ -59,7 +59,9 @@ Specify what it takes to deploy your app.
 
 ## TODO
 
+ * Write tests
  * Add fancy animation style with colours to loader
  * Redo layout and colours
- * Show cards on search results - click card to link to detail
- * Build bigger detail page and API call for character info
+ * Build better detail page
+ * About content
+ * Deployment!

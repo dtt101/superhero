@@ -1,17 +1,31 @@
 <div class="col col-12 p2">
-  <h1 id="title">Explore Marvel</h1>
   <form {{action "search" on="submit"}}>
     <label>Search:</label>
-    {{input value=queryField classNames="field-light"}}
-    <input type="submit" value="Search" class="button" />
+    {{input value=queryField classNames="field-light mb0"}}
+    <input type="submit" value="Search" class="button ml2" />
   </form>
-  {{#each character in model}}
-      {{#link-to 'characters.show' character (query-params query="null") classNames="button block button-transparent"}}
-      {{#if character.thumbnail}}
-        <img src="{{character.thumbnail}}" class="thumbnail"><br>
-      {{/if}}
-      {{character.name}}
-      {{/link-to}}
-  {{/each}}
-  Total: {{meta.total}}
+  <p>
+    Total: {{meta.total}}
+  </p>
+  <div class="flex flex-wrap p1">
+    {{#each character in model}}
+      <div class="flex col-3 fit p2">
+        <div class="p1 border rounded">
+          {{#link-to 'characters.show' character (query-params query="null") classNames="button block button-transparent"}}
+            {{#if character.thumbnail}}
+              <img src="{{character.thumbnail}}" class="fit">
+            {{else}}
+              <img src="/img/image_not_available.jpg" class="fit">
+            {{/if}}
+            <h3>{{character.name}}</h3>
+            <div class="flex-auto">
+              <p class="m0">
+                {{truncate-text character.description limit=100}}
+              </p>
+            </div>
+          {{/link-to}}
+        </div>
+      </div>
+    {{/each}}
+  </div>
 </div>

@@ -1,3 +1,5 @@
-img.thumbnail {
-  width: 200px;
+/* app styles */
+body {
+  font-family: Avenir Next,Helvetica Neue,Helvetica,Arial,sans-serif;
+  line-height: 1.5;
 }

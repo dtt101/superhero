@@ -1,11 +1,10 @@
-<div class="col col-4 p2">
-  <h1 id="title">Superheroes</h1>
+<div class="col col-12 p2">
+  <h1 id="title">Explore Marvel</h1>
   <form {{action "search" on="submit"}}>
     <label>Search:</label>
     {{input value=queryField classNames="field-light"}}
     <input type="submit" value="Search" class="button" />
   </form>
-   <!-- TODO: MOVE THIS TO DETAIL VIEW, and change to show details on page -->
   {{#each character in model}}
       {{#link-to 'characters.show' character (query-params query="null") classNames="button block button-transparent"}}
       {{#if character.thumbnail}}
@@ -15,7 +14,4 @@
       {{/link-to}}
   {{/each}}
   Total: {{meta.total}}
-</div>
-<div class="col col-8 p2">
-  <!-- TODO: DETAILS HERE WITH LINK TO FULL PROFILE using link-to -->
 </div>

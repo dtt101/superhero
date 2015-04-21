@@ -1,15 +1,25 @@
-<div class="col col-12 p2">
-  <form {{action "search" on="submit"}}>
-    <label>Search:</label>
-    {{input value=queryField classNames="field-light mb0"}}
-    <input type="submit" value="Search" class="button ml2" />
-  </form>
-  <p>
-    Total: {{meta.total}}
-  </p>
-  <div class="flex flex-wrap flex-stretch p1">
-    {{#each model as |character|}}
-      {{characters/character-card  character=character}}
-    {{/each}}
+<div class="clearfix mxn2">
+  <div class="col col-8 px2">
+    <div class="px2">
+      <form {{action "search" on="submit"}}>
+        <label>Search:</label>
+        {{input value=queryField classNames="field-light mb0"}}
+        <input type="submit" value="Search" class="button ml2" />
+      </form>
+    </div>
+  </div>
+  <div class="col col-4 px2">
+    <div class="px2 right">
+      <p>{{meta.total}} characters</p>
+    </div>
+  </div>
+</div>
+<div class="clearfix mxn2">
+  <div class="col col-12 p2 mx-auto">
+    <div class="flex flex-wrap flex-stretch p1">
+      {{#each model as |character|}}
+        {{characters/character-card  character=character}}
+      {{/each}}
+    </div>
   </div>
 </div>

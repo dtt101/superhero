@@ -1,0 +1,15 @@
+<div class="p1 border rounded">
+  {{#link-to 'characters.show' character (query-params query="null") classNames="button block button-transparent"}}
+    {{#if character.thumbnail}}
+      <img src="{{character.thumbnail}}" class="fit">
+    {{else}}
+      <img src="/img/image_not_available.jpg" class="fit">
+    {{/if}}
+    <h3>{{character.name}}</h3>
+    <div class="flex-auto">
+      <p class="m0">
+        {{truncate-text character.description limit=100}}
+      </p>
+    </div>
+  {{/link-to}}
+</div>

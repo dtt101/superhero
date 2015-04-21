@@ -8,24 +8,8 @@
     Total: {{meta.total}}
   </p>
   <div class="flex flex-wrap flex-stretch p1">
-    {{#each character in model}}
-      <div class="flex col-3 fit p2">
-        <div class="p1 border rounded">
-          {{#link-to 'characters.show' character (query-params query="null") classNames="button block button-transparent"}}
-            {{#if character.thumbnail}}
-              <img src="{{character.thumbnail}}" class="fit">
-            {{else}}
-              <img src="/img/image_not_available.jpg" class="fit">
-            {{/if}}
-            <h3>{{character.name}}</h3>
-            <div class="flex-auto">
-              <p class="m0">
-                {{truncate-text character.description limit=100}}
-              </p>
-            </div>
-          {{/link-to}}
-        </div>
-      </div>
+    {{#each model as |character|}}
+      {{characters/character-card  character=character}}
     {{/each}}
   </div>
 </div>

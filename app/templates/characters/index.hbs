@@ -2,14 +2,14 @@
   <div class="col col-8 px2">
     <div class="px2">
       <form {{action "search" on="submit"}}>
-        {{input value=queryField classNames="field-light mb0" placeholder='Search for a character'}}
+        {{input value=queryField classNames="field-light half-width mb0" placeholder='Search for a character...'}}
         <input type="submit" value="Search" class="button ml2" />
       </form>
     </div>
   </div>
   <div class="col col-4 px2">
     <div class="px2 right">
-      <p>{{meta.total}} characters</p>
+      <h3>{{meta.total}} characters</h3>
     </div>
   </div>
 </div>

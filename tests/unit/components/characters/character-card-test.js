@@ -5,7 +5,7 @@ import {
 
 moduleForComponent('characters/character-card', {
   // Specify the other units that are required for this test
-  // needs: ['component:foo', 'helper:bar']
+  needs: ['helper:truncateText']
 });
 
 test('it renders', function(assert) {

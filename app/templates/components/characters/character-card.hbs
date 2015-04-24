@@ -11,7 +11,9 @@
   {{/link-to}}
   <div class="flex-auto">
     <p class="m0 black">
-      {{truncate-text character.description limit=100}}
+      {{#if character.description}}
+        {{truncate-text character.description limit=100}}
+      {{/if}}
     </p>
   </div>
 </div>

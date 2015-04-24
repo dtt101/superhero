@@ -21,7 +21,9 @@ You will need the following things properly installed on your computer.
 * `npm install`
 * `bower install`
 
-## ENV
+## Marvel API
+
+To access the Marvel API you will need to get an API key from: http://developer.marvel.com/
 
 Create a `.env` file at the root of the project with:
 
@@ -46,22 +48,12 @@ MARVEL_PUBLIC_KEY=YOURKEYGOESHERE
 
 ### Deploying
 
-Specify what it takes to deploy your app.
-
-## Further Reading / Useful Links
-
-* [ember.js](http://emberjs.com/)
-* [ember-cli](http://www.ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
-
+TODO: deployment instructions
 
 ## TODO
 
- * Write tests
  * Add fancy animation style with colours to loader
  * Redo layout and colours
  * Build better detail page
  * About content
- * Deployment!
+ * Deployment, tests

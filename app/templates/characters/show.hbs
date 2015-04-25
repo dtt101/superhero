@@ -1,3 +1,17 @@
-<h1>{{model.name}}</h1>
-<p>{{{model.description}}}</p>
-<img src="{{model.thumbnail}}" class="thumbnail">
+<div class="clearfix mxn2">
+  <div class="col col-6">
+    <div class="ml2 px2">
+      {{#if model.thumbnail}}
+        <img src="{{model.thumbnail}}">
+      {{else}}
+        <img src="/img/image_not_available.jpg">
+      {{/if}}
+    </div>
+  </div>
+  <div class="col col-6">
+    <div class="px2 mr2">
+      <h1>{{model.name}}</h1>
+      <p>{{{model.description}}}</p>
+    </div>
+  </div>
+</div>

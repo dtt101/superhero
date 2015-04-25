@@ -52,8 +52,9 @@ TODO: deployment instructions
 
 ## TODO
 
- * Add fancy animation style with colours to loader
- * Redo layout and colours
+ * Style detail page
+ * Remove loader package and use loading templates
+ * Test quality
  * Build better detail page
  * About content
- * Deployment, tests
+ * Deployment

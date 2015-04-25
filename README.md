@@ -16,14 +16,15 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-* `git clone <repository-url>` this repository
-* change into the new directory
+* `git clone git@github.com:dtt101/superhero.git`
+* `cd superhero`
 * `npm install`
 * `bower install`
 
 ## Marvel API
 
-To access the Marvel API you will need to get an API key from: http://developer.marvel.com/
+To access the Marvel API you will need to get an API key
+from: http://developer.marvel.com/
 
 Create a `.env` file at the root of the project with:
 

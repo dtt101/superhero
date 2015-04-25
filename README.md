@@ -53,9 +53,8 @@ TODO: deployment instructions
 
 ## TODO
 
- * Style detail page
- * Remove loader package and use loading templates
  * Test quality
- * Build better detail page
+ * Add comics for characters to detail page
+ * Add events for characters to detail page
  * About content
  * Deployment

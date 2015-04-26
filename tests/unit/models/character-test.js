@@ -9,7 +9,6 @@ moduleForModel('character', 'Character Model', {
 });
 
 test('Character is a valid Ember Data Model', function(assert) {
-  var store = this.store();
   var character = this.subject({
     id: '1011334',
     name: '3-D Man',

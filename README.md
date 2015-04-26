@@ -54,6 +54,7 @@ TODO: deployment instructions
 ## TODO
 
  * Test quality
+ * Add load more button which uses offset query string flag
  * Add comics for characters to detail page
  * Add events for characters to detail page
  * About content

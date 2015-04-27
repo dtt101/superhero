@@ -12,6 +12,7 @@
     "ember-qunit": "0.3.0",
     "ember-qunit-notifications": "0.0.7",
     "qunit": "~1.17.1",
-    "basscss": "~5.2.0"
+    "basscss": "~5.2.0",
+    "pretender": "0.1.0"
   }
 }

@@ -2,7 +2,7 @@ import DS from 'ember-data';
 import ENV from "superhero/config/environment";
 
 export default DS.RESTAdapter.extend({
-  host: 'http://gateway.marvel.com',
+  host: ENV.hostURL,
   namespace: 'v1/public',
   buildURL: function(type, id, snapshot) {
     return this._super(type, id, snapshot) + this.generateSignature();

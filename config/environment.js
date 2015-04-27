@@ -10,6 +10,7 @@ module.exports = function(environment) {
       'connect-src': "'self' gateway.marvel.com",
       'img-src': "'self' i.annihil.us"
     },
+    hostURL: 'http://gateway.marvel.com',
     MARVEL_PUBLIC_KEY: process.env.MARVEL_PUBLIC_KEY,
     EmberENV: {
       FEATURES: {
@@ -42,6 +43,8 @@ module.exports = function(environment) {
     ENV.APP.LOG_VIEW_LOOKUPS = false;
 
     ENV.APP.rootElement = '#ember-testing';
+
+    ENV.hostURL = undefined;
   }
 
   if (environment === 'production') {

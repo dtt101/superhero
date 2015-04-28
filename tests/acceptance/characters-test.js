@@ -222,13 +222,12 @@ module('Acceptance: Characters', {
       }
     };
 
-
     server = new Pretender(function() {
       this.get('/v1/public/characters', function(request) {
         return [
           200,
           {"Content-Type": "application/json"},
-          JSON.stringify({characters: characters})
+          JSON.stringify(characters)
         ];
       });
     });
@@ -240,10 +239,11 @@ module('Acceptance: Characters', {
   }
 });
 
-test('visiting /characters', function(assert) {
+test('visiting /characters should show a list of characters', function(assert) {
   visit('/characters');
 
   andThen(function() {
     assert.equal(currentURL(), '/characters');
+    assert.equal(find('div.character-card').length, 1, 'The page should have 1 character');
   });
 });

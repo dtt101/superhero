@@ -38,3 +38,15 @@ test('visiting /characters should show a list of characters', function(assert) {
     assert.equal(find('div.character-card').length, 20, 'The page should have 1 character');
   });
 });
+
+test('Clicking the next page button should load a new page of characters', function(assert) {
+  visit('/characters');
+
+  andThen(function() {
+    click('button.button-next-page');
+  });
+
+  andThen(function() {
+    assert.equal(currentURL(), '/characters?offset=20');
+  });
+});

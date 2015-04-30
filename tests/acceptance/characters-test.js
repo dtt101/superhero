@@ -4,7 +4,7 @@ import {
   test
 } from 'qunit';
 import startApp from 'superhero/tests/helpers/start-app';
-import data from '../../fixtures/characters';
+import data from '../fixtures/characters';
 
 var application, server;
 

@@ -3,13 +3,15 @@ import {
   test
 } from 'ember-qunit';
 
-moduleFor('adapter:application', 'ApplicationAdapter', {
-  // Specify the other units that are required for this test.
-  // needs: ['serializer:foo']
-});
+moduleFor('adapter:application', 'ApplicationAdapter', {});
 
-// Replace this with your real tests.
-test('it exists', function(assert) {
+test('Adapter builds the correct URL', function(assert) {
   var adapter = this.subject();
   assert.ok(adapter);
+  var pattern = /^\/v1\/public\/characters\?ts=\d+\&apikey=.*$/;
+  assert.equal(
+    pattern.test(adapter.buildURL('character')),
+    true,
+    "buildURL should create a valid URL"
+  );
 });

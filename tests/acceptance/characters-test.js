@@ -15,10 +15,11 @@ module('Acceptance: Characters', {
 
     server = new Pretender(function() {
       this.get('/v1/public/characters', function(request) {
+       var responseData = JSON.stringify(characters);
         return [
           200,
           {"Content-Type": "application/json"},
-          JSON.stringify(characters)
+          responseData
         ];
       });
     });
@@ -48,5 +49,6 @@ test('Clicking the next page button should load a new page of characters', funct
 
   andThen(function() {
     assert.equal(currentURL(), '/characters?offset=20');
+    assert.equal(find('div.character-card').length, 20, 'The page should have 20 characters');
   });
 });

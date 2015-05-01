@@ -35,7 +35,7 @@ test('visiting /characters should show a list of characters', function(assert) {
 
   andThen(function() {
     assert.equal(currentURL(), '/characters');
-    assert.equal(find('div.character-card').length, 20, 'The page should have 1 character');
+    assert.equal(find('div.character-card').length, 20, 'The page should have 20 characters');
   });
 });
 

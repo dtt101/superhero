@@ -3,10 +3,7 @@ import {
   test
 } from 'ember-qunit';
 
-moduleForComponent('nav-bar', {
-  // specify the other units that are required for this test
-  // needs: ['component:foo', 'helper:bar']
-});
+moduleForComponent('nav-bar', {});
 
 test('it renders', function(assert) {
   assert.expect(2);
@@ -18,4 +15,6 @@ test('it renders', function(assert) {
   // renders the component to the page
   this.render();
   assert.equal(component._state, 'inDOM');
+
+  
 });

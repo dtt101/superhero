@@ -5,12 +5,10 @@ import {
 } from 'ember-qunit';
 
 moduleForComponent('characters/character-card', {
-  // Specify the other units that are required for this test
   needs: ['helper:truncateText']
 });
 
 test('it displays character information', function(assert) {
-  // Creates the component instance
   var component = this.subject();
   assert.equal(component._state, 'preRender');
 

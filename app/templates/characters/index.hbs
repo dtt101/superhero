@@ -18,6 +18,8 @@
     <div class="flex flex-wrap flex-stretch p1">
       {{#each model as |character|}}
         {{characters/character-card  character=character}}
+      {{else}}
+        <p>No superheroes to see at the moment...</p>
       {{/each}}
     </div>
   </div>

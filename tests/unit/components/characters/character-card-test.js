@@ -10,21 +10,22 @@ moduleForComponent('characters/character-card', {
 });
 
 test('it displays character information', function(assert) {
-  assert.expect(2);
-
   // Creates the component instance
   var component = this.subject();
   assert.equal(component._state, 'preRender');
 
-  // Ember.run(function() {
-  //   component.set('character', [ 'Remote Control']);
-  //   component.send('toggleElement');
-  // });
+  var character = {
+    id: 1,
+    name: "Test name",
+    description: "Test description",
+    thumbnail: "/img/image_not_available.jpg"
+  };
 
-  // Ember.run(function() {
-  //   this.render();
-  //   assert.equal(component._state, 'inDOM');
-  // });
+  Ember.run(function() {
+    component.set('character', character);
+  });
 
-  // equal(this.$().find('ul li').length, 1)
+  assert.equal(this.$().find('.character-name').text(), character.name);
+  assert.equal(this.$().find('.character-description').text().trim(), character.description);
+  assert.equal(this.$().find('.character-image').attr('src'), character.thumbnail);
 });

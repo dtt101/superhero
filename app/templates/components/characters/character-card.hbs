@@ -1,16 +1,16 @@
 <div class="p1 border rounded bg-silver red flex-stretch character-card">
   {{#link-to 'characters.show' character (query-params query="null")}}
     {{#if character.thumbnail}}
-      <img src="{{character.thumbnail}}" class="fit">
+      <img src="{{character.thumbnail}}" class="fit character-image">
     {{else}}
-      <img src="/img/image_not_available.jpg" class="fit">
+      <img src="/img/image_not_available.jpg" class="fit character-image">
     {{/if}}
   {{/link-to}}
   {{#link-to 'characters.show' character (query-params query="null")}}
-    <h4>{{character.name}}</h4>
+    <h4 class="character-name">{{character.name}}</h4>
   {{/link-to}}
   <div class="flex-auto">
-    <p class="m0 black">
+    <p class="m0 black character-description">
       {{#if character.description}}
         {{truncate-text character.description limit=100}}
       {{/if}}

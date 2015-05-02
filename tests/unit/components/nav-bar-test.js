@@ -5,7 +5,7 @@ import {
 
 moduleForComponent('nav-bar', {});
 
-test('it renders', function(assert) {
+test('it renders with two links', function(assert) {
   assert.expect(3);
 
   var component = this.subject();

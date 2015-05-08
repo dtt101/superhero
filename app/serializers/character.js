@@ -8,5 +8,11 @@ export default DS.RESTSerializer.extend({
     delete payload.data.results;
     results['meta'] = payload.data;
     return this._super(store, type, results, id, requestType);
+  },
+
+  extractSingle: function(store, type, payload, id) {
+    var results = {};
+    results['character'] = payload.characters[0];
+    return this._super(store, type, results, id);
   }
 });

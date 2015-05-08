@@ -1,4 +1,4 @@
-export default function data() {
+export default function charactersData() {
   return {
     "code": 200,
     "status": "Ok",

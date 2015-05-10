@@ -14,4 +14,14 @@
       {{/if}}
     </div>
   </div>
+  <div class="col col-12">
+    <div class=" px3  events">
+      <h2>Key Events</h2>
+      <ul>
+      {{#each event in model.events}}
+        <li class="event">{{event.name}}</li>
+      {{/each}}
+      </ul>
+    </div>
+  </div>
 </div>

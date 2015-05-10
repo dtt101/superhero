@@ -45,3 +45,16 @@ test('visiting /characters/1009609 shows character detail', function(assert) {
     );
   });
 });
+
+test('visiting /characters/1009609 shows key events for the character', function(assert) {
+  assert.expect(2);
+  visit('/characters/1009609');
+  andThen(function() {
+    assert.equal(find('.events .event').length, 1, 'Should show one event');
+    assert.equal(
+      find('.events .event:first').text(),
+      'Fear Itself',
+      'Should show event name'
+    );
+  });
+});

@@ -5,7 +5,7 @@ import {
 
 moduleForModel('character', 'Character Model', {
   // Specify the other units that are required for this test.
-  needs: []
+  needs: ['model:event']
 });
 
 test('Character is a valid Ember Data Model', function(assert) {

@@ -23,11 +23,10 @@ export default DS.RESTSerializer.extend(DS.EmbeddedRecordsMixin, {
   },
 
   addIdToEvents: function(events) {
-    var results = [];
-    for (var event of events) {
+    var results = events.map(function(event) {
       event.id = event.resourceURI.substr(event.resourceURI.lastIndexOf('/') + 1);
-      results.push(event);
-    }
+      return event;
+    });
     return results;
   }
 

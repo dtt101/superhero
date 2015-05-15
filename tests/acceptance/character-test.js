@@ -28,6 +28,7 @@ module('Acceptance: Character', {
 
   afterEach: function() {
     Ember.run(application, 'destroy');
+    server.shutdown();
   }
 });
 

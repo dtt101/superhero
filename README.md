@@ -49,7 +49,19 @@ MARVEL_PUBLIC_KEY=YOURKEYGOESHERE
 
 ### Deploying
 
-TODO: deployment instructions
+Demo available at:
+
+The demo has been deployed to firebase, an example ```firebase.json``` is in
+the project root.
+
+```
+ember build -prod
+firebase deploy
+```
+
+Full setup and instructions here: https://www.firebase.com/docs/hosting/guide/
+
+See also: http://www.ember-cli.com/#deployments
 
 ## TODO
 

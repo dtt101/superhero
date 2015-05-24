@@ -49,19 +49,22 @@ MARVEL_PUBLIC_KEY=YOURKEYGOESHERE
 
 ### Deploying
 
-Demo available at:
+Demo available at: https://superhero-demo.firebaseapp.com
 
 The demo has been deployed to firebase, an example ```firebase.json``` is in
 the project root.
+
+You'll need your own firebase application and account, full setup and,
+instructions here: https://www.firebase.com/docs/hosting/guide/
+
+After setup to deploy run:
 
 ```
 ember build -prod
 firebase deploy
 ```
 
-Full setup and instructions here: https://www.firebase.com/docs/hosting/guide/
-
-See also: http://www.ember-cli.com/#deployments
+See http://www.ember-cli.com/#deployments for other deployment options.
 
 ## TODO
 

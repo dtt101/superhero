@@ -14,7 +14,7 @@ test('It transforms the provided object into a single URL', function(assert) {
   var uri = transform.deserialize(obj);
   assert.equal(
     uri,
-    'http://i.annihil.us/u/prod/marvel/i/mg/6/20/52602f21f29ec.jpg',
+    'https://i.annihil.us/u/prod/marvel/i/mg/6/20/52602f21f29ec.jpg',
     'Thumbnail returns a single URL'
   );
 });

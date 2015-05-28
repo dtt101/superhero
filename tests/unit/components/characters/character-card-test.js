@@ -16,7 +16,7 @@ test('it displays character information', function(assert) {
     id: 1,
     name: "Test name",
     description: "Test description",
-    thumbnail: "/img/image_not_available.jpg"
+    thumbnail: "/img/image_not_available.gif"
   };
 
   Ember.run(function() {

@@ -570,7 +570,7 @@ export default function charactersData() {
           "modified": "1969-12-31T19:00:00-0500",
           "thumbnail": {
             "path": "http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available",
-            "extension": "jpg"
+            "extension": "gif"
           },
           "resourceURI": "http://gateway.marvel.com/v1/public/characters/1010699",
           "comics": {
@@ -615,7 +615,7 @@ export default function charactersData() {
           "modified": "2012-03-20T12:32:12-0400",
           "thumbnail": {
             "path": "http://i.annihil.us/u/prod/marvel/i/mg/9/50/4ce18691cbf04",
-            "extension": "jpg"
+            "extension": "gif"
           },
           "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009146",
           "comics": {
@@ -936,7 +936,7 @@ export default function charactersData() {
           "modified": "2012-07-10T19:11:52-0400",
           "thumbnail": {
             "path": "http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available",
-            "extension": "jpg"
+            "extension": "gif"
           },
           "resourceURI": "http://gateway.marvel.com/v1/public/characters/1016823",
           "comics": {
@@ -1529,7 +1529,7 @@ export default function charactersData() {
           "modified": "1969-12-31T19:00:00-0500",
           "thumbnail": {
             "path": "http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available",
-            "extension": "jpg"
+            "extension": "gif "
           },
           "resourceURI": "http://gateway.marvel.com/v1/public/characters/1011266",
           "comics": {
@@ -2085,7 +2085,7 @@ export default function charactersData() {
           "modified": "1969-12-31T19:00:00-0500",
           "thumbnail": {
             "path": "http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available",
-            "extension": "jpg"
+            "extension": "gif"
           },
           "resourceURI": "http://gateway.marvel.com/v1/public/characters/1011031",
           "comics": {
@@ -2781,7 +2781,7 @@ export default function charactersData() {
           "modified": "1969-12-31T19:00:00-0500",
           "thumbnail": {
             "path": "http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available",
-            "extension": "jpg"
+            "extension": "gif"
           },
           "resourceURI": "http://gateway.marvel.com/v1/public/characters/1011175",
           "comics": {
@@ -2830,7 +2830,7 @@ export default function charactersData() {
           "modified": "1969-12-31T19:00:00-0500",
           "thumbnail": {
             "path": "http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available",
-            "extension": "jpg"
+            "extension": "gif"
           },
           "resourceURI": "http://gateway.marvel.com/v1/public/characters/1011136",
           "comics": {

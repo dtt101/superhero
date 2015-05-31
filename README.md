@@ -68,8 +68,8 @@ See http://www.ember-cli.com/#deployments for other deployment options.
 
 ## TODO
 
+ * Adapter unit tests not Running
+ * Update to ember-cli 0.2.6 and Ember data 1.0.0-beta.17 breaks application routing and tests
  * Add comics for characters to detail page
  * Add events for characters to detail page
- * Make next page button handle number of results
  * About content
- * Deployment

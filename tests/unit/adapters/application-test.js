@@ -3,7 +3,12 @@ import {
   test
 } from 'ember-qunit';
 
-moduleFor('adapter:application', 'ApplicationAdapter', {});
+moduleFor('adapter:application');
+
+test('it exists', function(assert) {
+  var adapter = this.subject();
+  assert.ok(adapter);
+});
 
 test('Adapter builds the correct URL', function(assert) {
   var adapter = this.subject();

@@ -6,5 +6,7 @@ export default DS.Model.extend({
   modified: DS.attr('date'),
   resourceURI: DS.attr('string'),
   thumbnail: DS.attr('thumbnail'),
-  events: DS.hasMany('event')
+  events: DS.hasMany('event', {
+    async: false
+  })
 });

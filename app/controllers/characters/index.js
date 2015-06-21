@@ -8,9 +8,9 @@ export default Ember.ArrayController.extend({
 
   queryField: Ember.computed.oneWay('query'),
 
-  meta: function() {
+  meta: Ember.computed('content.[]', function() {
     return this.get("content.meta");
-  }.property('content.[]'),
+  }),
 
   resultsAvailable: Ember.computed('content.[]', function() {
     let total = this.get('meta').total - this.get('increment');

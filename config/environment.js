@@ -4,10 +4,11 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'superhero',
     environment: environment,
+    firebase: 'https://superhero-demo.firebaseio.com/',
     baseURL: '/',
     locationType: 'auto',
     contentSecurityPolicy: {
-      'connect-src': "'self' gateway.marvel.com",
+      'connect-src': "'self' gateway.marvel.com wss://*.firebaseio.com",
       'img-src': "'self' i.annihil.us"
     },
     hostURL: 'https://gateway.marvel.com',

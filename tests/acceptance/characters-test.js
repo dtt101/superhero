@@ -53,3 +53,10 @@ test('Clicking the next page button should load a new page of characters', funct
     assert.equal(find('.character-card').length, 20, 'The page should have 20 characters');
   });
 });
+
+test('The page should show a list of top ten searches', function(assert) {
+  visit('/characters');
+  andThen(function() {
+    assert.equal(find('.search-heading').text(), 'Top Searches', 'The page should have a top searches area');
+  });
+});

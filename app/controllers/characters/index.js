@@ -12,6 +12,21 @@ export default Ember.ArrayController.extend({
     return this.get("content.meta");
   }),
 
+  searches: Ember.computed(function() {
+    return [
+      'Wolverine',
+      'Wolverine',
+      'Wolverine',
+      'Wolverine',
+      'Wolverine',
+      'Wolverine',
+      'Wolverine',
+      'Wolverine',
+      'Wolverine',
+      'Wolverine'
+    ];
+  }),
+
   resultsAvailable: Ember.computed('content.[]', function() {
     let total = this.get('meta').total - this.get('increment');
     return (this.get('offset') <= total);

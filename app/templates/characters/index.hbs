@@ -25,18 +25,10 @@
   </div>
   <div class="col col2">
     <h3 class='search-heading'>Top Searches</h3>
-    <ul>
-      <li>Test search string</li>
-      <li>Test search string</li>
-      <li>Test search string</li>
-      <li>Test search string</li>
-      <li>Test search string</li>
-      <li>Test search string</li>
-      <li>Test search string</li>
-      <li>Test search string</li>
-      <li>Test search string</li>
-      <li>Test search string</li>
-      <li>Test search string</li>
+    <ul class="top-searches">
+      {{#each searches as |search|}}
+        <li class="top-search">{{search}}</li>
+      {{/each}}
     </ul>
   </div>
 </div>

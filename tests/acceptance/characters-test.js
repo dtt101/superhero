@@ -54,9 +54,17 @@ test('Clicking the next page button should load a new page of characters', funct
   });
 });
 
-test('The page should show a list of top ten searches', function(assert) {
+test('The page should show a top ten search heading', function(assert) {
   visit('/characters');
   andThen(function() {
     assert.equal(find('.search-heading').text(), 'Top Searches', 'The page should have a top searches area');
+  });
+});
+
+test('The page should show a top ten list of searches', function(assert) {
+  visit('/characters');
+
+  andThen(function() {
+    assert.equal(find('.top-searches .top-search').length, 10, 'The page should have top ten searches');
   });
 });

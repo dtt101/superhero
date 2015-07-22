@@ -8,8 +8,9 @@ module.exports = function(environment) {
     baseURL: '/',
     locationType: 'auto',
     contentSecurityPolicy: {
-      'connect-src': "'self' gateway.marvel.com wss://*.firebaseio.com",
-      'img-src': "'self' i.annihil.us"
+      'connect-src': "'self' gateway.marvel.com wss://*.firebaseio.com ws://46.101.63.236:*",
+      'img-src': "'self' i.annihil.us",
+      'script-src': "'self' localhost:35729 0.0.0.0:35729 46.101.63.236:*"
     },
     hostURL: 'https://gateway.marvel.com',
     MARVEL_PUBLIC_KEY: process.env.MARVEL_PUBLIC_KEY,
